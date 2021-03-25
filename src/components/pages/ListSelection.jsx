@@ -2,6 +2,8 @@ import React from 'react';
 
 import styled from 'styled-components';
 
+import StyledLink from 'components/StyledLink';
+
 import Container from 'components/Container';
 import Title from 'components/Title'
 import List from 'components/List';
@@ -24,15 +26,12 @@ class ListSelection extends React.Component {
             <Container>
                 <Title>Selecione a lista</Title>
                 <ListWrapper>
-                    <List name="Lista 1"/>
-                    <List name="Lista 2"/>
-                    <List name="Lista 3"/>
-                    <List name="Lista 4"/>
-                    <List name="Lista 5"/>
-                    <List name="Lista 6"/>
-                    <List name="Lista 7"/>
-                    <List name="Lista 8"/>
-                    <List name="Lista 9"/>
+                    <StyledLink to="/formatselection"><List name="Lista 1"/></StyledLink>
+                    <StyledLink to="/formatselection"><List name="Lista 2"/></StyledLink>
+                    <StyledLink to="/formatselection"><List name="Lista 3"/></StyledLink>
+                    <StyledLink to="/formatselection"><List name="Lista 4"/></StyledLink>
+                    <StyledLink to="/formatselection"><List name="Lista 5"/></StyledLink>
+                    <StyledLink to="/formatselection"><List name="Lista 6"/></StyledLink>
                 </ListWrapper>
                 
             </Container>

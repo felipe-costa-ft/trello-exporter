@@ -1,6 +1,7 @@
 import React from 'react';
 
 import styled from 'styled-components';
+import StyledLink from './StyledLink';
 
 
 const StyledHeader = styled.header`
@@ -29,7 +30,7 @@ class Header extends React.Component {
     render() {
         return(
             <StyledHeader>
-                <Logo>Trello Exporter</Logo>
+                <StyledLink to="/"><Logo>Trello Exporter</Logo></StyledLink>
             </StyledHeader>
         );
     }

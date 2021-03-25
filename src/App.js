@@ -1,11 +1,10 @@
-import BoardSelection from 'components/BoardSelection';
-import Header from 'components/Header'
-import ListSelection from 'components/ListSelection';
-import CardSelection from 'components/CardSelection';
-import FormatSelection from 'components/FormatSelection'
-import Login from 'components/Login';
-import Selection from 'components/Selection'
 import styled from 'styled-components';
+
+import { BrowserRouter } from 'react-router-dom';
+
+import Routes from 'routes'
+
+import Header from 'components/Header'
 
 const Container = styled.div`
   padding-top: 5em;
@@ -15,12 +14,12 @@ const Container = styled.div`
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Container>
-        <FormatSelection />
-      </Container>
-    </div>
+      <BrowserRouter>
+        <Header />
+        <Container>
+          <Routes />
+        </Container>
+      </BrowserRouter>
   );
 }
 

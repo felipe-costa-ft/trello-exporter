@@ -1,5 +1,7 @@
 import React from 'react';
 
+import StyledLink from 'components/StyledLink';
+
 import styled from 'styled-components';
 import Container from 'components/Container'
 import Button from 'components/Button';
@@ -17,7 +19,7 @@ class Login extends React.Component {
         return(
             <Container>
                 <Title>Conecte-se com o Trello para começar</Title>
-                <Button>Conectar</Button>
+                <StyledLink to="/selection"><Button>Conectar</Button></StyledLink>
             </Container>
         )
         

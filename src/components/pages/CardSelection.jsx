@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Card from 'components/Card';
 import Container from 'components/Container';
 import Title from 'components/Title';
+import StyledLink from 'components/StyledLink';
 
 
 const CardWrapper = styled.div`
@@ -35,17 +36,12 @@ class CardSelection extends React.Component {
                 <CardWrapper>
                     <ListTitle>Lista 1</ListTitle>
 
-                    <Card name="Card de teste de conteudo 1"/>
-                    <Card name="Card de teste de conteudo 2"/>
-                    <Card name="Card de teste de conteudo 3"/>
-                    <Card name="Card de teste de conteudo 4"/>
-                    <Card name="Card de teste de conteudo 5"/>
-                    <Card name="Card de teste de conteudo 6"/>
-                    <Card name="Card de teste de conteudo 7"/>
-                    <Card name="Card de teste de conteudo 8"/>
-                    <Card name="Card de teste de conteudo 9"/>
-                    <Card name="Card de teste de conteudo 10"/>
-                    <Card name="Card de teste de conteudo 11"/>
+                    <StyledLink to="/formatselection"><Card name="Card de teste de conteudo 1"/></StyledLink>
+                    <StyledLink to="/formatselection"><Card name="Card de teste de conteudo 2"/></StyledLink>
+                    <StyledLink to="/formatselection"><Card name="Card de teste de conteudo 3"/></StyledLink>
+                    <StyledLink to="/formatselection"><Card name="Card de teste de conteudo 4"/></StyledLink>
+                    <StyledLink to="/formatselection"><Card name="Card de teste de conteudo 5"/></StyledLink>
+                    <StyledLink to="/formatselection"><Card name="Card de teste de conteudo 6"/></StyledLink>
                 </CardWrapper>
             </Container>
         );
