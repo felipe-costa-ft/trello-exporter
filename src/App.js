@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import BoardSelection from 'components/BoardSelection';
+import Header from 'components/Header'
+import ListSelection from 'components/ListSelection';
+import CardSelection from 'components/CardSelection';
+import FormatSelection from 'components/FormatSelection'
+import Login from 'components/Login';
+import Selection from 'components/Selection'
+import styled from 'styled-components';
+
+const Container = styled.div`
+  padding-top: 5em;
+  background-color: snow;
+`;
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Container>
+        <FormatSelection />
+      </Container>
     </div>
   );
 }
